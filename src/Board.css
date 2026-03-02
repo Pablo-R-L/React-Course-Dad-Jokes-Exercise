@@ -1,0 +1,101 @@
+.Joke_List{
+    display: flex;
+    width: 80%;
+    height: 80%;
+}
+
+.Side_Bar{
+    background: #9575cd;
+    display: flex;
+    flex-direction:  column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.3), 0 15px 12px rgba(0,0,0, 0.1), inset 0 0 25px #7e57c2;
+    z-index: 2;
+}
+
+.Side_Bar img{
+    width: 50%;
+    border-radius: 50%;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.3), 0 15px 12px rgba(0,0,0, 0.1), inset 0 0 25px #7e57c2
+}
+
+.Joke_List_Title{
+    font-size: 4rem;
+    margin: 2rem;
+    color: white;
+    font-weight: 300;
+    letter-spacing: 0.6rem
+}
+
+.Joke_List_Title span {
+    font-weight: 700;
+    letter-spacing: 0;
+}
+
+
+.Board_Table{
+    height: 90%;
+    width: 70%;
+    background: #fff;
+    align-self: center;
+    overflow: scroll;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.3), 0 15px 12px rgba(0,0,0, 0.1);
+    justify-content: center;
+    align-items: center;
+}
+
+.Loading_Screen{
+    display: flex;
+    justify-content:center;
+    align-self: center;
+    text-align: center;
+
+}
+
+.Get_More{
+    font-size: 25px;
+    border-radius: 2rem;
+    width:50%;
+    padding: 1rem 2rem;
+    margin: 1rem 2rem;
+    background: linear-gradient(
+    135deg,
+    rgba(179,229,252,1)0%,
+    rgba(179,229,252,1)50%,
+    rgba(240,98,146,1)50%,
+    rgba(240,98,146,1)100%
+  );
+  color: #ffffff;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.3), 0 15px 12px rgba(0,0,0, 0.1);
+  transition: 0.2s ease;
+}
+
+.Get_More:hover{
+    transform: translateY(-2px);
+    box-shadow: 0 19px 38px rgba(129, 129, 129, 0.3), 0 15px 12px rgba(128, 128, 128, 0.1);
+}
+
+.Laughing_Emoji:hover{
+    animation: tremor-horizontal 1s ease infinite;
+}
+
+@keyframes tremor-horizontal {
+  0%   { transform: translate(0, 0) rotate(0); }
+  10%  { transform: translate(-3px, 2px) rotate(-1deg); }
+  20%  { transform: translate(3px, -2px) rotate(1deg); }
+  30%  { transform: translate(-4px, 1px) rotate(-1deg); }
+  40%  { transform: translate(4px, -1px) rotate(1deg); }
+  50%  { transform: translate(-2px, 2px) rotate(-0.5deg); }
+  60%  { transform: translate(2px, -2px) rotate(0.5deg); }
+  70%  { transform: translate(-3px, 1px) rotate(-1deg); }
+  80%  { transform: translate(3px, -1px) rotate(1deg); }
+  90%  { transform: translate(-1px, 1px) rotate(-0.5deg); }
+  100% { transform: translate(0, 0) rotate(0); }
+}
